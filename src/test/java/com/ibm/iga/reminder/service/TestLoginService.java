@@ -7,7 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import com.ibm.iga.reminder.config.RootConfiguration;
-import com.ibm.iga.reminder.service.inter.ILoginService;
+
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
@@ -16,10 +16,10 @@ import com.ibm.iga.reminder.service.inter.ILoginService;
 public class TestLoginService {
 
 	@Autowired
-	private ILoginService loginService;
+//	private ILoginService loginService;
 	
 	@Test
 	public void test () {
-		loginService.validate("jianjunw@cn.ibm.com", "nhy65tgb");
+	//	loginService.validate("jianjunw@cn.ibm.com", "nhy65tgb");
 	}
 }

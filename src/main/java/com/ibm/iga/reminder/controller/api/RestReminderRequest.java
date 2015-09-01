@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ibm.iga.reminder.model.ReminderRequest;
 import com.ibm.iga.reminder.service.inter.IReminderRequestService;
+import com.ibm.iga.reminder.service.inter.IUserService;
 
 /**
  * 
@@ -31,6 +32,7 @@ import com.ibm.iga.reminder.service.inter.IReminderRequestService;
 @RestController
 @RequestMapping("/api/reminder/request")
 public class RestReminderRequest {
+
 
 	@Autowired
 	private IReminderRequestService reminderRequestService;
